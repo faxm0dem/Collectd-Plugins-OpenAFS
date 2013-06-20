@@ -1,16 +1,7 @@
 Collectd-Plugins-OpenAFS
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
-
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
-
+This collectd plugin will use the openafs command line helpers to query statistics.
+Currently it ships with CLI wrapper classes L<AFS::VOS> and L<AFS::VLDB>, as the XS modules that are available on CPAN are troublesome to build, especially using recent versions of openafs. This will happily change in the future, if the latter product is improving.
 
 INSTALLATION
 
@@ -30,14 +21,8 @@ perldoc command.
 
 You can also look for information at:
 
-    RT, CPAN's request tracker (report bugs here)
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Collectd-Plugins-OpenAFS
-
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Collectd-Plugins-OpenAFS
-
-    CPAN Ratings
-        http://cpanratings.perl.org/d/Collectd-Plugins-OpenAFS
+    GitHub
+        https://github.com/faxm0dem/Collectd-Plugins-OpenAFS
 
     Search CPAN
         http://search.cpan.org/dist/Collectd-Plugins-OpenAFS/
