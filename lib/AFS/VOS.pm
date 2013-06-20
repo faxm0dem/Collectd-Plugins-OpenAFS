@@ -8,6 +8,16 @@ has 'vosbin' => (
 	default => 'vos',
 );
 
+=head1 METHODS
+
+=head2 listvol
+
+Attrs: fileserver (Str)
+
+Returns data structure with volume statistics
+
+=cut
+
 sub listvol {
 	my ($self,$fileserver) = @_;
 	my %result;

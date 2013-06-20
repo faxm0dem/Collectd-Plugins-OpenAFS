@@ -5,6 +5,7 @@ author:
   - 'Fabien Wernli <wernli ate in2p3.fr>'
 build_requires:
   ExtUtils::MakeMaker: 6.59
+  Test::Collectd::Plugins: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.59
@@ -25,4 +26,4 @@ requires:
   perl: 5.6.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.1006
+version: 0.1007

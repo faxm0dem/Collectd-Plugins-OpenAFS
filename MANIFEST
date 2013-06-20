@@ -24,6 +24,7 @@ perl-Collectd-Plugins-OpenAFS.spec
 README
 share/etc/collectd.d/openafs.conf
 t/00-load.t
+t/01-load-probes.t
 t/boilerplate.t
 t/manifest.t
 t/pod-coverage.t
