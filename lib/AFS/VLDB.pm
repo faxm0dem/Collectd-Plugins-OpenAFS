@@ -1,0 +1,36 @@
+package AFS::VLDB;
+
+use Moose;
+
+has 'vosbin' => (
+	is => 'ro',
+	isa => 'Str',
+	default => 'vos',
+);
+
+has 'cellname' => (
+	is => 'ro',
+	isa => 'str',
+	predicate => 'has_cellname',
+);
+
+sub listaddrs {
+	my $self = shift;
+	my @result;
+	my @cellname = ();
+	if ($self -> has_cellname) {
+		@cellname = ( 'cell', $self -> cellname );
+	}
+	open FH, '-|', $self -> vosbin, 'listaddrs', @cellname or die "$!";
+	for (<FH>) {
+		chomp;
+		next if /^$/;
+		next unless $_;
+		push @result, { 'name-1' => $_ };
+	}
+	close FH;
+	return @result;
+}
+
+1;
+

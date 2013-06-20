@@ -1,0 +1,17 @@
+Revision history for Collectd-Plugins-OpenAFS
+
+0.1007  Thu Jun 20 11:02:44 CEST 2013
+        add option to specify cell
+        use SetHost as alias to Host
+        add some pod
+
+0.1006  Mon Jun 17 11:10:10 CEST 2013
+        init AFS objects in read, instead of init
+        listaddr if server list is empty
+0.1005  Mon Feb 13 14:10:45 CET 2012
+				size and maxquota now in bytes
+0.1004  Fri Feb 10 11:02:30 CET 2012
+        plugin instance is now server and type instance volname
+0.01    Date/time
+        First version, released on an unsuspecting world.
+
